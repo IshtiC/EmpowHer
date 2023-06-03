@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Profile</title>
+  <style>
+    body {
+      background-color: #f7f7f7;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .profile-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      max-width: 400px;
+      text-align: center;
+    }
+    
+    .profile-picture {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+    
+    .profile-name {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .profile-bio {
+      font-size: 16px;
+      color: #666666;
+      margin-bottom: 20px;
+    }
+    
+    .profile-contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .contact-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      fill: #999999;
+    }
+    
+    .contact-link {
+      color: #333333;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    
+    .contact-link:hover {
+      color: #080361;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+    <img src="profile-picture.jpg" alt="Profile Picture" class="profile-picture">
+    <h2 class="profile-name">Your Name</h2>
+    <input type="text" id="description" name="description" class="profile-bio" placeholder="Enter your description" required>
+    <div class="profile-contact">
+      <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M0 0h24v24H0z" fill="none"/>
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+      </svg>
+      <a href="mailto:your-email@example.com" class="contact-link">your-email@example.com</a>
+    </div>
+    <div class="profile-contact">
+      <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M0 0h24v24H0z" fill="none"/>
+        <path d="M12 2a10 10 0 0 0-7.9 15.9L2 22l5.8-1.9A10 10 0 1 0 12 2zm2 15h-4v-2h4v2zm0-4h-2v-6h2v6zm2-10h-8V3a8 8 0 1 1 8 8z"/>
+      </svg>
+      <a href="https://your-website.com" class="contact-link">your-website.com</a>
+    </div>
+  </div>
+</body>
+</html>

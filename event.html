@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+  <style>
+    body {
+      
+      background-color: #c7c0f7;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+   
+      padding: 20px;
+      border-radius: 8px;
+      
+    }
+    .image {
+      position: absolute;
+      height: 50opx;
+      width: 250px;
+      top: 3;
+      right: 10px;
+      margin-right: 100px;
+    }
+
+    h1 {
+      font-size: 50px;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    .event-planner {
+      background-color: #c7c0f7;
+      
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .event-planner h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .event-planner p {
+      margin-bottom: 10px;
+    }
+
+    .book-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background-color: #9e3ad0;
+      color:  #c7c0f7;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .book-button:hover {
+      background-color: #9e3ad0;
+    }
+
+    @media screen and (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+      
+      .event-planner {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>OUR PROFESSIONALS</h1>
+
+    <div class="event-planner">
+      <img class="image" src="imagesss/doc1.png" alt="Your Image">
+      <h2>Dr Ankit Mishra</h2>
+      <p>Pschyiatrist</p>
+      <p>15 years of experience</p>
+      <p> About:From reputed college of AIIMS and pubished several articles about mental health.</p>
+      <p> Specializes in anxiety isorders ,depression and Mood disorders.</p>
+      <p>Chennai</p>
+     
+     
+      <button class="book-button" onclick="redirectToBookPage()">Book Appointment</button>
+    </div>
+    <div class="event-planner">
+      <img class="image" src="imagesss/doc2.png" alt="Your Image">
+      <h2>Suhasini Ganguly</h2>
+      <p>Pyschologists</p>
+      <p>12 years of experience</p>
+      <p> About:Did bsc in pyschology from Xaviers and is author for several books about mental health</p>
+      <p> Specializes in autism and eating disorders.</p>
+
+      <p>Delhi</p>
+      <button class="book-button" onclick="redirectToBookPage()">Book Appointment</button>
+    </div>
+
+    
+
+    <div class="event-planner">
+      <h2>Dr.Subash Ghosh</h2>
+      <img class="image" src="imagesss/doc3.png" alt="Your Image">
+      <p>Gynaecologist</p>
+      <p>15 years of experience</p>
+      <p> About:From AIIMS an has record of more than 800 succesful deliveries</p>
+      <p> Specializes in diseases related to female reproductive health</p>
+      <p>Mumbai</p>
+      <button class="book-button" onclick="redirectToBookPage()">Book Appointment</button>
+    </div>
+
+    <script>
+      function redirectToBookPage() {
+        window.location.href = "booktest.html";
+      }
+    </script>
+  </div>
+</body>
+</html>

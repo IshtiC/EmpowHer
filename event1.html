@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+  <style>
+    body {
+
+        background-image: url('imagesss/Screen Shot 2023-06-03 at 6.23.12 PM.png');
+        background-size: cover;
+      background-color: #c7c0f7;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+   
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      
+    }
+    .image {
+      position: absolute;
+      top: 1500;
+      right: 200px;
+    }
+
+    h1 {
+      font-size: 50px;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    .event-planner {
+      background-color: #c7c0f7;
+      
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .event-planner h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .event-planner p {
+      margin-bottom: 10px;
+    }
+
+    .book-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background-color: #9e3ad0;
+      color:  #c7c0f7;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .book-button:hover {
+      background-color: #3659c3;
+    }
+
+    @media screen and (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+      
+      .event-planner {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Your apointments for today:</h1>
+
+    <div class="event-planner">
+      
+      <h2>Swastika tiwari</h2>
+      <p>1pm-3pm</p>
+      <p>3/06/23</p>
+      
+     
+      <button class="book-button" onclick="redirectToBookPage()">CONFIRM</button>
+    </div>
+    <div class="event-planner">
+     
+      <h2>Sahna Reddy</h2>
+      <p>5pm-6pm</p>
+      <p>6/06/23</p>
+      
+
+     
+      <button class="book-button" onclick="redirectToBookPage()">CONFIRM</button>
+    </div>
+
+    
+
+    <div class="event-planner">
+      <h2>Sanjana Sharma</h2>
+      <p>10am-12pm</p>
+      <p>6/06/23</p>
+      
+      
+      <button class="book-button" onclick="redirectToBookPage()">CONFIRM</button>
+    </div>
+
+    <script>
+      function redirectToBookPage() {
+        window.location.href = "book.html";
+      }
+    </script>
+  </div>
+</body>
+</html>

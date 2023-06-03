@@ -1,0 +1,35 @@
+.carousel-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel {
+    display: flex;
+    width: 300%;
+    animation: carouselMove 10s infinite;
+  }
+  
+  .blog {
+    flex: 1 0 33.33%;
+    padding: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+  }
+  
+  @keyframes carouselMove {
+    0% {
+      transform: translateX(0%);
+    }
+    33.33% {
+      transform: translateX(-100%);
+    }
+    66.66% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  

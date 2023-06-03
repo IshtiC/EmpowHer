@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Us</title>
+<style>
+    body {
+    /*background-color: #c7c0f7;*/
+    background-image: url('imagesss/about jpg.jpg');
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+
+    .container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #c7c0f7;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    }
+
+    .heading {
+    font-size: 40px;
+    text-align: center;
+    }
+
+    .points {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0;
+    }
+
+    .navigation {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    }
+
+    .navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    }
+
+    .navigation ul li {
+    margin-right: 10px;
+    position: relative;
+    }
+
+    .navigation ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    }
+
+    .navigation ul li:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    }
+
+    .navigation ul li:hover:after {
+    transform: scaleX(1);
+    }
+
+    .back-button {
+    text-align: center;
+    margin-top: 20px;
+    }
+
+    .back-button a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    background-color: lightgray;
+    border-radius: 5px;
+    }
+
+    @media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        margin: 50px auto;
+        padding: 10px;
+    }
+
+    .heading {
+        font-size: 32px;
+    }
+
+    .points {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    }
+
+    @media screen and (max-width: 480px) {
+    .container {
+        margin: 30px auto;
+    }
+
+    .heading {
+        font-size: 28px;
+    }
+
+    .points {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+    }
+</style>
+</head>
+<body>
+<div class="navigation">
+    <ul>
+    <li><a href="webmain.html">Back</a></li>
+    </ul>
+</div>
+<div class="container">
+    <h1 class="heading">ABOUT US</h1>
+    <div class="points">
+    <p>EmpowHer is a comprehensive and accessible website dedicated to</p>
+    <p>addressing the challenges faced by women in India when discussing</p>
+    <p>their health and body changes. It provides a safe and supportive</p>
+    <p>platform where women can seek guidance, information, and</p>
+    <p>em

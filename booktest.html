@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Your Appointment with US:</title>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    body {
+        background-image: url('imagesss/Screen Shot 2023-06-03 at 4.01.31 PM.png');
+        background-size: cover;
+        
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 150px;
+    }
+    
+    h1 {
+        
+      color:black;
+      margin-bottom: 20px;
+      font-family:'Righteous', serif;
+    }
+    
+    form {
+      max-width: 400px;
+      background-color:#c7c0f7;
+      border-radius: 12px;
+      padding: 100px;
+    }
+    
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 3px;
+      border: 1px solid#c7c0f7;
+      margin-bottom: 10px;
+    }
+    
+    input[type="date"],
+    input[type="time"] {
+      width: 100%;
+      padding: 8px;
+      border-radius: 3px;
+      border: 1px solid#c7c0f7;
+      margin-bottom: 10px;
+    }
+    
+    input[type="submit"] {
+      background-color: #080361;
+      color: rgb(250, 209, 209);
+      padding: 30px 40px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+     
+    }
+    
+    input[type="submit"]:hover {
+      background-color:  #474758;
+      font-size: larger;
+    }
+  </style>
+</head>
+<body>
+  <h1>Book Your Appointment</h1>
+  
+  
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your name" required>
+    
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" placeholder="Your age" required>
+    
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required>
+    
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time" required>
+    
+    <input type="submit" value="Book Appointment" onclick="redirectToBookPage()">
+
+    <script>
+      function redirectToBookPage() {
+        window.location.href = "webmain1.html";
+      }
+    </script>
+  </form>
+</body>
+</html>

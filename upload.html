@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload Photos</title>
+  <style>
+    body {
+        background-image: url('imagesss/Screen Shot 2023-06-03 at 5.28.58 PM.png');
+        background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      margin: 20;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 700px;
+      background-color: #c7c0f7;
+      border-radius: 12px;
+      padding: 110px;
+      font-size: 20px;
+    }
+    
+    h1 {
+      color: black;
+      margin-bottom: 20px;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    input[type="file"]{
+        width: 100%;
+      padding: 8px;
+      border-radius: 3px;
+      border: 1px solid #c7c0f7;
+      margin-bottom: 10px;
+    }
+    input[type="text"] {
+      width: 100%;
+      font-size: large;
+      padding: 8px;
+      border-radius: 3px;
+      border: 1px solid #c7c0f7;
+      margin-bottom: 10px;
+    }
+    
+    input[type="submit"] {
+      background-color: #080361;
+      color: #faded1;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #474758;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Doctor Verification</h1>
+  
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+      <label for="photo1">Govt issued photo id(passport/aadhar/pan):</label>
+      <input type="file" id="photo1" name="photo1" accept="image/*" required>
+    
+      <label for="photo2">Copy of medical certificate</label>
+      <input type="file" id="photo2" name="photo2" accept="image/*" required>
+    
+      <label for="text">MCI registration number</label>
+      <input type="text" id="text" name="text" placeholder="Description" required>
+    
+      <input type="SUBMIT" value="Upload Photos">
+    </form>
+  </div>
+</body>
+</html>
